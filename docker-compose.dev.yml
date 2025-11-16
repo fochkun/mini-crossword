@@ -48,8 +48,8 @@ services:
   # --- НОВЫЙ СЕРВИС: words-service ---
   words-service:
     build:
-      context: .
-      dockerfile: ./apps/words/Dockerfile.dev
+      context: ./apps/words
+      dockerfile: Dockerfile.dev
     container_name: words-service-dev
     depends_on:
       - words-db
@@ -70,8 +70,8 @@ services:
 
   storage-service:
     build:
-      context: .
-      dockerfile: ./apps/storage/Dockerfile.dev
+      context: ./apps/storage
+      dockerfile: Dockerfile.dev
     container_name: storage-service-dev
     depends_on:
       - crosswords-db
@@ -94,8 +94,8 @@ services:
 
   generator-service:
     build:
-      context: .
-      dockerfile: ./apps/generator/Dockerfile.dev
+      context: ./apps/generator
+      dockerfile: Dockerfile.dev
     container_name: generator-service-dev
     depends_on:
       - words-db
