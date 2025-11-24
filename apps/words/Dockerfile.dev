@@ -12,7 +12,7 @@ RUN npm ci
 COPY . .
 
 # Порт (может отличаться: 3001, 3002, 3003)
-EXPOSE 3001
+EXPOSE 3000
 
 # Запуск с live-reload (NestJS watch mode)
 CMD ["npm", "run", "start:dev"]

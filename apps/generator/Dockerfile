@@ -32,7 +32,7 @@ RUN npm ci --only=production && npm cache clean --force
 USER crossword
 
 # Порт (должен совпадать с тем, что слушает NestJS)
-EXPOSE 3001
+EXPOSE 3000
 
 # Запуск приложения
 CMD ["node", "dist/main"]
