@@ -32,7 +32,7 @@ import { WordEntity } from './entities/word.entity';
           entities: [__dirname + '/**/*.entity{.ts,.js}'],
           migrations: [__dirname + '/../migration/*.ts'],
           migrationsRun: false,
-          synchronize: true,
+          synchronize: false,
         };
       },
       inject: [ConfigService],
